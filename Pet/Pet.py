@@ -1,4 +1,3 @@
-
 # Make a class
 # Attributes should include name, animal type and age of the pet
 class Pet:
@@ -6,7 +5,7 @@ class Pet:
         self.__name = name
         self.__animal_type = animal_type
         self.__age = age
-        
+
 # Make a method that assigns a value to the __name field.
     def set_name(self, name):
         self.__name = name

@@ -34,7 +34,7 @@ class Fan:
             return self.__radius
         else:
             return "Invalid Radius"
-        
+            
     def set_radius(self, radius):
         self.__radius = radius
 
@@ -67,7 +67,7 @@ class Fan:
 
     @staticmethod
     def animation_1():
-        Fan.clear_previous_lines(14)
+        Fan.clear_previous_lines(15)
         print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠔⠒⠈⢙⠒⠢⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⣔⣧⣏⣇⠀⠀⠀⠀⣠⢞⣿⣿⡆⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀")
@@ -82,10 +82,10 @@ class Fan:
         print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢺⠛⠛⠛⠛⠛⠛⠛⠛⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-
+        print(" wooooshhhh...")
     @staticmethod
     def animation_2():
-        Fan.clear_previous_lines(14)
+        Fan.clear_previous_lines(15)
         print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠔⠒⣿⣟⠒⠢⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⡔⠣⠀⠀⠬⣿⣿⣿⠀⠀⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
@@ -100,12 +100,14 @@ class Fan:
         print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢺⠛⠛⠛⠛⠛⠛⠛⠛⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-
-    def animate_loading(self):
-        while True:
+        print(" ~ gentle breeze for u...")
+    def animate_loading(self, num_iterations):
+        for _ in range(num_iterations):
             Fan.animation_1()
             time.sleep(0.5)
         
             Fan.animation_2()
             time.sleep(0.5)
 
+fan = Fan()
+fan.animate_loading(3) 
