@@ -82,7 +82,7 @@ class Fan:
         print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
         print("⠀⠀⠀⠀⠀⠀⠀⠀⢺⠛⠛⠛⠛⠛⠛⠛⠛⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print(" wooooshhhh...")
+        print("        wooooshhhh...")
     @staticmethod
     def animation_2():
         Fan.clear_previous_lines(15)
