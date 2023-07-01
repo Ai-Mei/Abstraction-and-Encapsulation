@@ -1,12 +1,22 @@
 # import the class
 from Car import Car
 # Ask user for input 
-year_model = input("Enter your car's year model: ")
+while True:
+    try:
+        year_model = int(input("Enter your car's year model: "))
+        if year_model >= 1886:
+            break
+        else:
+            raise ValueError
+    except ValueError:
+        print("Invalid input. Please enter a valid year for the year model.")
+
 make = input("Enter the brand of your car: ")
 
 
-# Create a Pet object
-my_car = Car( year_model, make)
+
+# Create a Car object
+my_car = Car(year_model, make)
 
 
 # Accelerate the car five times and display the current speed

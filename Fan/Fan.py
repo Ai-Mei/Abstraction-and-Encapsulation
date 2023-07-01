@@ -22,27 +22,40 @@ class Fan:
             return "Medium"
         elif self.__speed == Fan.fast:
             return "Fast"
-        
+        else:
+            return "Invalid value of speed."
+
     def set_speed(self, speed):
         self.__speed = speed
 
-    def get_on(self):
-        return self.__on
-    
-    def set_on(self, on):
-        self.__on = on
 
     def get_radius(self):
-        return self.__radius
-    
+        if isinstance(self.__radius, int):
+            return self.__radius
+        else:
+            return "Invalid Radius"
+        
     def set_radius(self, radius):
         self.__radius = radius
+
 
     def get_color(self):
         return self.__color
     
     def set_color(self, color):
         self.__color = color
+
+
+    def get_on(self):
+        if self.__on == True:
+            return self.__on
+        elif self.__on == False:
+            return self.__on
+        else:
+            return "Invalid value."
+
+    def set_on(self, on):
+        self.__on = on
 
 
     @staticmethod
