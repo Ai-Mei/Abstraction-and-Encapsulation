@@ -1,4 +1,5 @@
 from Fan import Fan
+
 # 1st Object = Maximum Speed, radius 10, color Yellow, and turn it on.
 fan1 = Fan(3, 10, 'Yellow', True)
 # 2nd Object = Medium speed, radius 5, color blue, and turn it off.
@@ -15,3 +16,6 @@ print("Speed:", fan2.get_speed())
 print("Radius:", fan2.get_radius())
 print("Color:", fan2.get_color())
 print("On:", fan2.get_on())
+
+fan = Fan()
+fan.animate_loading()
