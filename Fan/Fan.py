@@ -1,5 +1,3 @@
-import sys
-import time
 # Create a Fan class
 class Fan:
 # Assign 3 variables slow, medium, and fast
@@ -57,57 +55,4 @@ class Fan:
     def set_on(self, on):
         self.__on = on
 
-
-    @staticmethod
-    def clear_previous_lines(num_lines):
-        for _ in range(num_lines):
-            sys.stdout.write('\033[F')
-            sys.stdout.write('\033[K')
-        sys.stdout.flush()
-
-    @staticmethod
-    def animation_1():
-        Fan.clear_previous_lines(15)
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠔⠒⠈⢙⠒⠢⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⣔⣧⣏⣇⠀⠀⠀⠀⣠⢞⣿⣿⡆⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⡜⡇⢻⣝⣟⣿⠀⢠⣿⣿⡿⡿⠋⢳⠀⠀⠎⠀⠀⠉⠳⣄⡴⠃⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⢰⠇⠈⠑⠻⠿⠇⣶⣷⠻⠛⠁⠀⢰⠈⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠈⣇⠀⡴⣒⣒⣖⣾⢻⣹⣟⠻⣶⡄⢰⠂⠀⠀⡖⠒⢆⣀⣀⡜⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠸⣄⡗⣟⣿⢫⠇⠀⠙⣞⡮⢷⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠙⢤⡑⠒⠉⠀⢀⠆⠐⢙⡯⠋⠀⠀⠀⠀⠀⢸⠉⠙⢦⣰⠃⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠒⢒⡒⠚⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢺⠛⠛⠛⠛⠛⠛⠛⠛⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("        wooooshhhh...")
-    @staticmethod
-    def animation_2():
-        Fan.clear_previous_lines(15)
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠔⠒⣿⣟⠒⠢⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⡔⠣⠀⠀⠬⣿⣿⣿⠀⠀⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⡜⠀⢀⢀⠠⠈⣿⡿⠁⠀⠀⠀⠈⢳⠀⠀⠀⠀⠀⠀⣀⣠⡤⠶⠂⠠⠀⠀")
-        print("⠀⠀⠀⠀⠀⢰⠇⣶⣿⣽⣳⠖⣿⣷⣶⣴⣷⣟⣷⠈⠄⠀⠂⠒⠒⣋⣩⠤⠒⠒⠒⠂⠀⠀")
-        print("⠀⠀⠀⠀⠀⠈⣇⠹⠿⠟⠉⢠⣿⣇⠈⠹⠿⠟⠉⢰⠂⠀⣈⣉⣉⡭⠴⠞⠋⠉⠁⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠸⣄⠀⠀⠀⢌⣿⣿⡦⠈⠠⠀⣠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠙⢤⡀⠀⠈⣿⣿⡇⠐⢀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠒⢒⡒⠚⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print("⠀⠀⠀⠀⠀⠀⠀⠀⢺⠛⠛⠛⠛⠛⠛⠛⠛⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-        print(" ~ gentle breeze for u...")
-    def animate_loading(self, num_iterations):
-        for _ in range(num_iterations):
-            Fan.animation_1()
-            time.sleep(0.5)
-        
-            Fan.animation_2()
-            time.sleep(0.5)
-
-fan = Fan()
-fan.animate_loading(3) 
+ 

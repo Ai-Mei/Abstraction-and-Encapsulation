@@ -22,9 +22,11 @@ my_car = Car(year_model, make)
 # Accelerate the car five times and display the current speed
 for i in range(5):
     my_car.accelerate()
+    # Add animation per acceleration
     print("Current speed:", my_car.get_speed())
 
 # Brake the car five times and display the current speed
 for i in range(5):
     my_car.brake()
+    # Add animation every brake
     print("Current speed:", my_car.get_speed())
