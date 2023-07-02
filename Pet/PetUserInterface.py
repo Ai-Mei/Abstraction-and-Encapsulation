@@ -83,11 +83,17 @@ class UserInterface:
             UserInterface.animation_2()
             time.sleep(0.5)
 
-
-
-
-
-
+    @staticmethod
+    def animate_text():
+        for i in range(5):
+            print("\033[1;94mॱ⋅.˳˳.⋅˙ॱᐧ.˳˳.⋅ઇଓ \033[1;96mThank nyaw.")
+            time.sleep(0.5)
+            print("\033[2K\033[A" + " " * 28 + "\033[2K\033[A" + " " * 28)
+            time.sleep(0.5)
+        print("\033[0;97m   /ᐢ⑅ᐢ\   ♡   ₊˚  ")
+        print("\033[0;97m꒰ ˶• ༝ •˶꒱       ♡‧₊˚    ♡")
+        print("\033[0;97m./づ~ :¨·.·¨:     ₊˚  ")
+        print("\033[0;97m           `·..·‘    ₊˚   ♡")
 
 
 
