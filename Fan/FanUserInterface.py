@@ -1,7 +1,6 @@
 import sys
 import time
 import pyfiglet
-from Fan import Fan
 class UserInterface:
     @staticmethod
     def clear_previous_lines(num_lines):
