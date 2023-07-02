@@ -27,7 +27,6 @@ my_car = Car(year_model, make)
 for i in range(5):
     ui.animate_acceleration(1)
     my_car.accelerate()
-    # Add animation per acceleration
     print("\033[1;35mCurrent speed:\033[47m\033[1;36m".center(45), my_car.get_speed())
     print("\033[0m")
     print("\033[0;31m......." * 15)
@@ -35,7 +34,6 @@ for i in range(5):
 for i in range(5):
     ui.animate_brake(1)
     my_car.brake()
-    # Add animation every brake
     print("\033[1;35mCurrent speed:\033[47m\033[1;36m".center(45), my_car.get_speed())
     print("\033[0m")
     print("......." * 15)

@@ -51,7 +51,6 @@ class UserInterface:
         for i in range(num_iterations):
             UserInterface.animation_1()
             time.sleep(0.5)
-        
             UserInterface.animation_2()
             time.sleep(0.5)
 
